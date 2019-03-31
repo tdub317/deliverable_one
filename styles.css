@@ -1,0 +1,188 @@
+/*Style all fonts to Google font*/
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+/*Style body and background*/
+body {
+  background-color: #F0ECEE;
+  margin: auto;
+  padding: auto;
+}
+
+/*Flex container for all elements*/
+.all-container {
+  display: flex;
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/*Style top container*/
+.top-container {
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+/*Style page title*/
+.pagetitle p {
+  font-size: 24px;
+}
+
+/*Remove bullet points*/
+.navbar ul {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0;
+  width: auto;
+}
+
+/*Remove underline*/
+.top-container a {
+  text-decoration: none;
+  color: #88898B
+}
+
+/*Link hover color reddish*/
+.top-container a:hover {
+  color: #FF4850;
+}
+
+/*Add margin to page title*/
+.top-container p {
+  margin: 2px 2px;
+  padding: 0px;
+}
+
+/*Emphasize with red text*/
+.redtext {
+  color: #FF4850;
+}
+/*Grey the statement text*/
+#greytext {
+  color: #88898B;
+}
+
+/*Style the buttons
+I think the button-radius should be 5px to look the same as the design
+and button padding should be 20px*/
+button {
+  display: block;
+  background-color: #FF4850;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+/*Grey color when hover button*/
+button:hover {
+  background-color: #CCC;
+}
+
+/*Add margin to content container*/
+.content-container {
+  margin: 0 10px;
+}
+
+/*Change font size and weight for question*/
+.question p {
+  font-weight: 600;
+  font-size: 36px;
+  margin: 15px 0px;
+  padding: 0;
+}
+
+/*Style the statement*/
+.statement p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: auto;
+  padding: 0;
+}
+
+/*Mobile First*/
+@media only screen and (min-width: 768px) {
+
+  /*Add bulldog background*/
+  body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    background-image: url("bulldog.jpg"); /*image in same folder as html/css*/
+    background-color: #F0ECEE;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .all-container {
+    padding: 10px 70px 0px 50px;
+  }
+
+  .top-container {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin-bottom: 150px;
+  }
+
+  /*Change font size of page title*/
+  .pagetitle p {
+    font-size: 24px;
+  }
+
+  .navbar ul {
+    margin: 0;
+    padding: 5px;
+  }
+  .navbar ul li {
+    display: inline-block;
+    padding: 8px;
+  }
+
+  .button1 {
+    display: inline-block;
+    margin: auto;
+    width: auto;
+  }
+
+  .content-container {
+    width: 45%;
+  }
+
+  .question {
+    margin: 20px 0px;
+  }
+
+  .question p {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  .statement {
+    margin: 20px 0px 30px 0px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .statement p {
+    font-size: 20px;
+  }
+
+  .button2 {
+    width: 50%;
+  }
+
+  #button2 {
+    padding: 10px 60px;
+    width: auto;
+  }
+
+}
