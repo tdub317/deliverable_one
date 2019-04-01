@@ -173,6 +173,7 @@ button:hover {
     margin: 0px;
     font-size: 32px;
     line-height: 50px;
+    font-weight: 600;
   }
 
   /*added margin spacing to match picture*/
@@ -189,7 +190,7 @@ button:hover {
 
   /*match button in picture*/
   .button2 {
-    width: 50%;
+    width: auto;
   }
 
   /*increased the left/right side padding to match picture and kept 10px top/bottom */
