@@ -1,9 +1,9 @@
-/*Style all fonts to Google font*/
+/*Style all fonts to Google font (REQUIRED)*/
 * {
   font-family: "Fira Sans", sans-serif;
 }
 
-/*Style body and background*/
+/*Style body and background color (REQUIRED)*/
 body {
   background-color: #F0ECEE;
   margin: auto;
@@ -38,13 +38,13 @@ body {
   width: auto;
 }
 
-/*Remove underline*/
+/*Remove underline on anchor + nav link color (REQUIRED)*/
 .top-container a {
   text-decoration: none;
   color: #88898B
 }
 
-/*Link hover color reddish*/
+/*Red text when hover over link (REQUIRED)*/
 .top-container a:hover {
   color: #FF4850;
 }
@@ -64,7 +64,7 @@ body {
   color: #88898B;
 }
 
-/*Style the buttons
+/*Button padding: 10px; border-radius: 15px; width: 100%; button background color (REQUIRED);
 I think the button-radius should be 5px to look the same as the design
 and button padding should be 20px*/
 button {
@@ -79,7 +79,7 @@ button {
   margin: 20px 0px;
 }
 
-/*Grey color when hover button*/
+/*Grey background color and red text when hover over button (REQUIRED)*/
 button:hover {
   background-color: #CCC;
   color: #FF4850;
@@ -108,16 +108,15 @@ button:hover {
   padding: 0;
 }
 
-/*Mobile First*/
+/*Mobile first above / Desktop View below / change views @ 768px (REQUIRED)*/
 @media only screen and (min-width: 768px) {
 
-  /*Add bulldog background*/
+  /*Add bulldog background for desktop view (REQUIRED)*/
   body {
     margin: 0px;
     padding: 0px;
     height: 100%;
     width: 100%;
-    max-width: 1920px;
     background-image: url("bulldog.jpg"); /*image in same folder as html/css*/
     background-color: #F0ECEE;
     background-size: 100%;
@@ -151,12 +150,14 @@ button:hover {
     display: inline-block;
     padding: 8px;
   }
-
-  /*button width is auto*/
+  /*all button width auto (REQUIRED)*/
+  button {
+    width: auto;
+  }
+  /*set button 1 on nav bar line*/
   .button1 {
     display: inline-block;
     margin: auto;
-    width: auto;
   }
 
   /*adjusted the content container to match the picture*/
@@ -189,15 +190,9 @@ button:hover {
     line-height: 30px;
   }
 
-  /*match button in picture*/
-  .button2 {
-    width: auto;
-  }
-
   /*increased the left/right side padding to match picture and kept 10px top/bottom */
   #button2 {
     padding: 10px 60px;
-    width: auto;
   }
 
 }
