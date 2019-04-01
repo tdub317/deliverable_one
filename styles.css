@@ -82,6 +82,7 @@ button {
 /*Grey color when hover button*/
 button:hover {
   background-color: #CCC;
+  color: #FF4850;
 }
 
 /*Add margin to content container*/
