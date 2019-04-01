@@ -92,15 +92,17 @@ button:hover {
 /*Change font size and weight for question*/
 .question p {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 50px;
   margin: 15px 0px;
   padding: 0;
 }
 
 /*Style the statement*/
 .statement p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
+  line-height: 13px;
   margin: auto;
   padding: 0;
 }
@@ -120,11 +122,11 @@ button:hover {
     background-size: 100%;
     background-repeat: no-repeat;
   }
-
+  /*added padding to adjust to look like the picture*/
   .all-container {
     padding: 10px 70px 0px 50px;
   }
-
+  /*adjusted the page title and navigation bar container*/
   .top-container {
     display: inline-flex;
     justify-content: space-between;
@@ -142,44 +144,55 @@ button:hover {
     margin: 0;
     padding: 5px;
   }
+
+  /*added spaces between navigation links*/
   .navbar ul li {
     display: inline-block;
     padding: 8px;
   }
 
+  /*button width is auto*/
   .button1 {
     display: inline-block;
     margin: auto;
     width: auto;
   }
 
+  /*adjusted the content container to match the picture*/
   .content-container {
     width: 45%;
   }
 
+  /*limit width to wrap like picture*/
   .question {
-    margin: 20px 0px;
+    width: 90%;
   }
 
+  /*styled to match picture*/
   .question p {
-    font-size: 34px;
+    margin: 0px;
+    font-size: 32px;
     line-height: 50px;
   }
 
+  /*added margin spacing to match picture*/
   .statement {
-    margin: 20px 0px 30px 0px;
+    margin: 15px 0px 30px 0px;
     padding: 0;
     width: 100%;
   }
 
   .statement p {
     font-size: 20px;
+    line-height: 30px;
   }
 
+  /*match button in picture*/
   .button2 {
     width: 50%;
   }
 
+  /*increased the left/right side padding to match picture and kept 10px top/bottom */
   #button2 {
     padding: 10px 60px;
     width: auto;
